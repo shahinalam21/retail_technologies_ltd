@@ -7,5 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductReview extends Model
 {
-    use HasFactory;
+
+      protected $fillable =[
+        'discription',
+        'rating',
+        'customer_id',
+        'product_id'
+    ];
+
+    public function profile(){
+        return $this->belongsTo(CustomerProfile::class,'customer_id');
+    }
+
 }
