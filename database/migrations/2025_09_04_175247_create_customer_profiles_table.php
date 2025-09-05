@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('cus_state',100);
             $table->string('cus_postcode',50);
             $table->string('cus_country',100);
-            $table->string('cus_phone,50');
+            $table->string('cus_phone',50);
             $table->string('cus_fax',50);
 
 
